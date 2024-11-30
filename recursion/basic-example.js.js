@@ -16,5 +16,6 @@ const sum = (array, index) => {
     return total
 }
 
-console.log(sum(nums, 0));
+const result = sum(nums, 0)
 
+console.log(result);
