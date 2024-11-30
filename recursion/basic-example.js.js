@@ -1,0 +1,20 @@
+const nums = [1, 2, 3, 4, 5, 6];
+
+const sum = (array, index) => {
+
+    if (index === array.length - 1) {
+        console.log(`BASE CASE: Index ${index}`);
+        return array[index];
+    };
+
+    console.log(`At index: ${index}`);
+
+    const total = array[index] + sum(array, index + 1);
+
+    console.log(`Total at index: ${index} is ${total}`);
+
+    return total
+}
+
+console.log(sum(nums, 0));
+
